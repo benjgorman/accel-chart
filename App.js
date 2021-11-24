@@ -30,7 +30,7 @@ export default function App() {
   };
 
   const updateData = (accelerometerData) => {
-    let _test = test_data;
+    let _test = [...test_data];
     _test.push({
       x: new Date(Date.now()),
       y: round(accelerometerData.z),
